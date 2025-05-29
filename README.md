@@ -5,4 +5,5 @@
 # Data
 |Stage|Link|
 |-------|-------|
+|Seperated Profiles and Dialogues|[liusiyang/eeyore_profile](https://huggingface.co/datasets/liusiyang/eeyore_profile)|
 |Instruction-tuning Data for SFT|[liusiyang/eeyore_depression_sft](https://huggingface.co/datasets/liusiyang/eeyore_depression_sft)|
