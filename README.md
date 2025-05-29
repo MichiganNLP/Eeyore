@@ -1,4 +1,4 @@
-# Eeyore: Realistic Depression Simulation with Expert-in-the-Loop Supervised and Preference Optimization
+# ![image](files/Users/jzhang/Desktop/Isolated.png) Eeyore: Realistic Depression Simulation with Expert-in-the-Loop Supervised and Preference Optimization
 
 # Data
 |Stage|Link|
