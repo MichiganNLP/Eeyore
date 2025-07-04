@@ -7,4 +7,4 @@
 |-------|-------|
 |Seperated Profiles and Dialogues|[liusiyang/eeyore_profile](https://huggingface.co/datasets/liusiyang/eeyore_profile)|
 |Instruction-tuning Data for SFT|[liusiyang/eeyore_depression_sft](https://huggingface.co/datasets/liusiyang/eeyore_depression_sft)|
-|Model-generated Preference Data for DPO|[liusiyang/eeyore_depression_sft](https://huggingface.co/datasets/liusiyang/eeyore_depression_generated_preference)|
+|Model-generated Preference Data for DPO|[liusiyang/eeyore_depression_generated_preference](https://huggingface.co/datasets/liusiyang/eeyore_depression_generated_preference)|
