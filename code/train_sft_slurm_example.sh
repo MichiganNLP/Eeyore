@@ -29,8 +29,6 @@ export PATH=$CONDA_ENV_PATH/bin:$PATH
 conda init bash
 conda activate $CONDA_ENV_NAME
 
-# --include=localhost:0,1,2,3,5,6
-# NOTE: if you are using single node, use this piece of codes; if you are using multi nodes, comment this command and uncomment all the following lines.
 
 deepspeed  --module openrlhf.cli.train_sft \
    --max_len 4096 \
