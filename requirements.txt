@@ -1,0 +1,5 @@
+openrlhf                                 0.8.2
+wandb                                    0.18.0
+torch                                    2.7.0
+deepspeed                                0.16.9
+datasets                                 2.21.0
