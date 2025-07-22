@@ -1,5 +1,10 @@
 <h1 align="center">  <img src="https://github.com/MichiganNLP/Eeyore/blob/main/icon.png" width="50" height="50"> Eeyore: Realistic Depression Simulation  <br /> with Expert-in-the-Loop Supervised and Preference Optimization </h1>
 
+# Will Update Soon
+
+* Model Checkpoints
+* Preference Generate Codes
+* Reproducing Codes of Baselines
 
 
 # Data
