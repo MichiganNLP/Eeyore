@@ -99,6 +99,7 @@ We provide an OpenAI similar web server for easy integration and evaluation. The
 ## Start with Generation Parameters used in Experiments
 ```bash
 export PYTHONPATH=${project_dir}
+# cd where you put the eeyore model
 cd ./output_dir
 python ../code/deploy_eeyore.py \
   --model ${model_name} \
