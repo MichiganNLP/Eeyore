@@ -92,3 +92,63 @@ deepspeed  --module openrlhf.cli.train_dpo \
    --ref_offload \
 ```
 
+# Model Deployment
+
+We provide an OpenAI similar web server for easy integration and evaluation. The server accepts standard OpenAI chat completion requests and returns responses in the same format.
+
+## Start with Generation Parameters used in Experiments
+```bash
+cd ./output_dir
+python ../code/deploy_eeyore.py \
+  --model ${model_name} \
+  --host 127.0.0.1 \
+  --port 6416 \
+  --temperature 1.0 \
+  --top-p 0.8 \
+  --max-new-tokens 4096 \
+  --sequence-bias "[[[128009], -4.0]]" \
+  --exponential-decay-length-penalty 0 1.01
+```
+
+## API Usage
+The server provides OpenAI-compatible endpoints:
+
+### Chat Completions
+```bash
+curl -X POST http://127.0.0.1:6416/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "messages": [
+      {"role": "user", "content": "How are you feeling today?"}
+    ]
+  }'
+```
+
+
+# Automatic Evaluation
+
+## Reproducing Eeyore and Evaluating
+
+First, deploy the Eeyore model as mentioned above.
+
+```bash
+export PYTHONPATH=${project_dir}
+python ./code/automatic_eval.py --experiment-name=eeyore --experiment-model=${model_name} --base-url="http://127.0.0.1:6416/v1" --api-key=${api_key}
+```
+
+## Reproducing Baselines and Evaluating
+
+```
+export PYTHONPATH=${project_dir}
+python ./code/automatic_eval.py --experiment-name=roleplay-doh --experiment-model="gpt-4o-2024-08-06" --base-url="https://api.openai.com/v1" --api-key=${api_key} --temperature=0.7 --top-p=1.0
+
+```
+
+```
+export PYTHONPATH=${project_dir}
+python ./code/automatic_eval.py --experiment-name=patient-psi --experiment-model="gpt-4o-2024-08-06" --base-url="https://api.openai.com/v1" --api-key=${api_key} --temperature=0.8 --top-p=1.0
+
+```
+
+
+
