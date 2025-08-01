@@ -98,6 +98,7 @@ We provide an OpenAI similar web server for easy integration and evaluation. The
 
 ## Start with Generation Parameters used in Experiments
 ```bash
+export PYTHONPATH=${project_dir}
 cd ./output_dir
 python ../code/deploy_eeyore.py \
   --model ${model_name} \
@@ -127,16 +128,16 @@ curl -X POST http://127.0.0.1:6416/v1/chat/completions \
 
 # Automatic Evaluation
 
-## Reproducing Eeyore and Evaluating
+### Reproducing Eeyore and Evaluating
 
-First, deploy the Eeyore model as mentioned above.
+First, deploy the Eeyore model as mentioned in Model Deployment.
 
 ```bash
 export PYTHONPATH=${project_dir}
-python ./code/automatic_eval.py --experiment-name=eeyore --experiment-model=${model_name} --base-url="http://127.0.0.1:6416/v1" --api-key=${api_key}
+python ./code/automatic_eval.py --experiment-name=eeyore --experiment-model=${model_name} --base-url="http://127.0.0.1:6416/v1"
 ```
 
-## Reproducing Baselines and Evaluating
+### Reproducing Baselines and Evaluating
 
 ```
 export PYTHONPATH=${project_dir}
