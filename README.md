@@ -3,8 +3,6 @@
 # Will Update Soon
 
 * Model Checkpoints
-* Preference Generation Codes
-* Reproducing Codes of Baselines
 
   Email me if you need the above materials earlier
 
