@@ -140,6 +140,8 @@ python ./code/automatic_eval.py --experiment-name=eeyore --experiment-model=${mo
 
 ### Reproducing Baselines and Evaluating
 
+If you find our reproduction useful, please also cite our work. Thank you!
+
 ```
 export PYTHONPATH=${project_dir}
 python ./code/automatic_eval.py --experiment-name=roleplay-doh --experiment-model="gpt-4o-2024-08-06" --base-url="https://api.openai.com/v1" --api-key=${api_key} --temperature=0.7 --top-p=1.0
@@ -152,5 +154,31 @@ python ./code/automatic_eval.py --experiment-name=patient-psi --experiment-model
 
 ```
 
+# Citation
+```
+@inproceedings{liu-etal-2025-eeyore,
+    title = "Eeyore: Realistic Depression Simulation via Expert-in-the-Loop Supervised and Preference Optimization",
+    author = "Liu, Siyang  and
+      Brie, Bianca  and
+      Li, Wenda  and
+      Biester, Laura  and
+      Lee, Andrew  and
+      Pennebaker, James  and
+      Mihalcea, Rada",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Findings of the Association for Computational Linguistics: ACL 2025",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.findings-acl.707/",
+    pages = "13750--13770",
+    ISBN = "979-8-89176-256-5",
+    abstract = "Large Language Models (LLMs) have been previously explored for mental healthcare training and therapy client simulation, but they still fall short in authentically capturing diverse client traits and psychological conditions. We introduce \textbf{Eeyore} , an 8B model optimized for realistic depression simulation through a structured alignment framework, incorporating expert input at every stage.First, we systematically curate real-world depression-related conversations, extracting depressive traits to guide data filtering and psychological profile construction, and use this dataset to instruction-tune Eeyore for profile adherence. Next, to further enhance realism, Eeyore undergoes iterative preference optimization{---}first leveraging model-generated preferences and then calibrating with a small set of expert-annotated preferences.Throughout the entire pipeline, we actively collaborate with domain experts, developing interactive interfaces to validate trait extraction and iteratively refine structured psychological profiles for clinically meaningful role-play customization.Despite its smaller model size, the Eeyore depression simulation outperforms GPT-4o with SOTA prompting strategies, both in linguistic authenticity and profile adherence."
+}
+```
 
 
