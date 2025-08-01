@@ -3,3 +3,5 @@ wandb                                    0.18.0
 torch                                    2.7.0
 deepspeed                                0.16.9
 datasets                                 2.21.0
+uvicorn                                  0.34.2
+starlette                                0.46.2
