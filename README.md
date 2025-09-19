@@ -7,6 +7,8 @@
   Email me if you need the above materials earlier
 
 
+
+
 # Data
 |Stage|Link|
 |-------|-------|
@@ -14,6 +16,10 @@
 |Instruction-tuning Data for SFT|[liusiyang/eeyore_depression_sft](https://huggingface.co/datasets/liusiyang/eeyore_depression_sft)|
 |Model-generated Preference Data for DPO|[liusiyang/eeyore_depression_generated_preference](https://huggingface.co/datasets/liusiyang/eeyore_depression_generated_preference)|
 
+# Model
+|Stage|Link|
+|-------|-------|
+|SFT|[liusiyang/eeyore_sft_llama3.1_8B_epoch2](https://huggingface.co/liusiyang/eeyore_sft_llama3.1_8B_epoch2)|
 
 # Model Training
 
