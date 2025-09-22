@@ -22,6 +22,7 @@
 |-------|-------|
 |SFT|[liusiyang/eeyore_sft_llama3.1_8B_epoch2](https://huggingface.co/liusiyang/eeyore_sft_llama3.1_8B_epoch2)|
 |DPO-1|[liusiyang/eeyore_sft_epoch2_dpo_round1_epoch1_llama3.1_8B](https://huggingface.co/liusiyang/eeyore_sft_epoch2_dpo_round1_epoch1_llama3.1_8B)|
+|DPO-2|[liusiyang/eeyore_sft_epoch2_dpo_round2_epoch1_llama3.1_8B](liusiyang/eeyore_sft_epoch2_dpo_round2_epoch1_llama3.1_8B)|
 
 # Model Training
 
