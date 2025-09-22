@@ -2,7 +2,7 @@
 
 # Will Update Soon
 
-* Model Checkpoints
+* Last-round  DPO Model Checkpoints
 
   Email me if you need the above materials earlier
 
